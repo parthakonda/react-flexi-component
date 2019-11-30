@@ -1,8 +1,8 @@
-<testsuites name="jest tests" tests="5" failures="0" time="3.028">
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-11-30T05:12:44" time="3.028" tests="5">
-    <testcase classname=" renders without crashing" name=" renders without crashing" time="0.088">
+<testsuites name="jest tests" tests="5" failures="0" time="2.953">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-11-30T06:23:14" time="2.953" tests="5">
+    <testcase classname=" renders without crashing" name=" renders without crashing" time="0.086">
     </testcase>
-    <testcase classname=" Test submit event" name=" Test submit event" time="0.009">
+    <testcase classname=" Test submit event" name=" Test submit event" time="0.008">
     </testcase>
     <testcase classname=" Test normal config" name=" Test normal config" time="0.003">
     </testcase>

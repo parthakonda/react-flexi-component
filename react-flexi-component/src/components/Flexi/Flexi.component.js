@@ -20,7 +20,7 @@ class Flexi extends React.Component {
     };
   };
 
-  handleComponentRender(item) {
+  handleComponentRender = item => {
     let self = this; // FYI: for closure parent object in callback
     let componentToBeRendered;
     item.onChange = this.handleOnChange(item.name);
@@ -41,7 +41,7 @@ class Flexi extends React.Component {
     return (
       <React.Fragment>
         {componentToBeRendered}
-        {item.children && item.children.items ? (
+        {item.children && item.children.items && (
           <React.Fragment>
             {item.children.items.map((nestedItem, index) => {
               this.data[nestedItem.name] = "";
@@ -49,12 +49,10 @@ class Flexi extends React.Component {
               return nestedComponent;
             })}
           </React.Fragment>
-        ) : (
-          <React.Fragment></React.Fragment>
         )}
       </React.Fragment>
     );
-  }
+  };
 
   render() {
     return (
