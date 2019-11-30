@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 
 class TextField extends React.Component {
   render() {
-    console.log(this.props);
     return (
       <React.Fragment>
         <label>{this.props.name}</label>
@@ -20,6 +19,7 @@ class TextField extends React.Component {
 // Adding validation for props
 TextField.propTypes = {
   name: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired
+  label: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired
 };
 export default TextField;

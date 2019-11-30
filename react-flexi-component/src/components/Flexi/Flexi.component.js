@@ -41,10 +41,10 @@ class Flexi extends React.Component {
     return (
       <React.Fragment>
         {componentToBeRendered}
-        {item.children ? (
+        {item.children && item.children.items ? (
           <React.Fragment>
-            {item.children.map((nestedItem, index) => {
-              this.data[nestedItem.name] = null;
+            {item.children.items.map((nestedItem, index) => {
+              this.data[nestedItem.name] = "";
               let nestedComponent = self.handleComponentRender(nestedItem);
               return nestedComponent;
             })}
@@ -59,11 +59,13 @@ class Flexi extends React.Component {
   render() {
     return (
       <form>
-        {this.props.config.items.map((item, index) => {
-          this.data[item.name] = null;
-          let componentToBeRendered = this.handleComponentRender(item);
-          return componentToBeRendered;
-        })}
+        {Array.isArray(this.props.config.items)
+          ? this.props.config.items.map((item, index) => {
+              this.data[item.name] = "";
+              let componentToBeRendered = this.handleComponentRender(item);
+              return componentToBeRendered;
+            })
+          : ""}
         <button type="button" onClick={this.onSubmit}>
           Submit
         </button>

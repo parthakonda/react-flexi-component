@@ -16,6 +16,7 @@ class App extends Component {
 
   getFlexiData(data) {
     this.setState({ formData: { ...data } });
+    return data;
   }
 
   render() {

@@ -1,0 +1,14 @@
+<testsuites name="jest tests" tests="5" failures="0" time="3.028">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-11-30T05:12:44" time="3.028" tests="5">
+    <testcase classname=" renders without crashing" name=" renders without crashing" time="0.088">
+    </testcase>
+    <testcase classname=" Test submit event" name=" Test submit event" time="0.009">
+    </testcase>
+    <testcase classname=" Test normal config" name=" Test normal config" time="0.003">
+    </testcase>
+    <testcase classname=" Test recursive config" name=" Test recursive config" time="0.003">
+    </testcase>
+    <testcase classname=" Receives user input" name=" Receives user input" time="0.003">
+    </testcase>
+  </testsuite>
+</testsuites>
