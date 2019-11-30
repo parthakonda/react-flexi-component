@@ -1,12 +1,12 @@
-<testsuites name="jest tests" tests="5" failures="0" time="2.953">
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-11-30T06:23:14" time="2.953" tests="5">
-    <testcase classname=" renders without crashing" name=" renders without crashing" time="0.086">
+<testsuites name="jest tests" tests="5" failures="0" time="3.198">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2019-11-30T06:28:33" time="3.198" tests="5">
+    <testcase classname=" renders without crashing" name=" renders without crashing" time="0.102">
     </testcase>
     <testcase classname=" Test submit event" name=" Test submit event" time="0.008">
     </testcase>
     <testcase classname=" Test normal config" name=" Test normal config" time="0.003">
     </testcase>
-    <testcase classname=" Test recursive config" name=" Test recursive config" time="0.003">
+    <testcase classname=" Test recursive config" name=" Test recursive config" time="0.002">
     </testcase>
     <testcase classname=" Receives user input" name=" Receives user input" time="0.003">
     </testcase>

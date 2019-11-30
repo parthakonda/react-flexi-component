@@ -5,19 +5,15 @@ import { Flexi } from "./components";
 import flexiConfig from "./mock/flexi_config";
 
 class App extends Component {
-  constructor() {
-    super();
-    this.getFlexiData = this.getFlexiData.bind(this);
-  }
   state = {
     flexiConfig: flexiConfig,
     formData: {}
   };
 
-  getFlexiData(data) {
+  getFlexiData = data => {
     this.setState({ formData: { ...data } });
     return data;
-  }
+  };
 
   render() {
     return (
