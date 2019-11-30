@@ -13,12 +13,12 @@ class Flexi extends React.Component {
     this.props.onSubmit(this.data); // dont edit this line
   };
 
-  handleOnChange(key) {
+  handleOnChange = key => {
     // For updating the data dynamically
-    return function onChangeHandler(event) {
+    return event => {
       this.data[key] = event.target.value;
-    }.bind(this);
-  }
+    };
+  };
 
   handleComponentRender(item) {
     let self = this; // FYI: for closure parent object in callback
